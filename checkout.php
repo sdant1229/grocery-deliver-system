@@ -3,8 +3,7 @@ session_start();
 include 'includes/db_connect.php';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    // In real system, store order in database
-    unset($_SESSION['cart']); // Clear cart after order
+    unset($_SESSION['cart']);
     $success = true;
 }
 ?>
@@ -34,3 +33,4 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <?php endif; ?>
 </body>
 </html>
+
