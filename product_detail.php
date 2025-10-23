@@ -17,7 +17,7 @@ if (!$product) {
     exit;
 }
 
-// Handle add to cart
+// add 2 cart handler here
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $qty = intval($_POST['quantity']);
     if ($qty > 0) {
@@ -53,3 +53,4 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <a href="index.php">Back to Products</a>
 </body>
 </html>
+
