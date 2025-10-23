@@ -2,7 +2,6 @@
 session_start();
 include 'includes/db_connect.php';
 
-// Remove item
 if (isset($_GET['remove'])) {
     $remove_id = intval($_GET['remove']);
     if (isset($_SESSION['cart'][$remove_id])) {
@@ -12,7 +11,6 @@ if (isset($_GET['remove'])) {
     exit;
 }
 
-// Update quantities
 if (isset($_POST['update_cart'])) {
     foreach ($_POST['quantities'] as $id => $qty) {
         $id = intval($id);
@@ -27,7 +25,6 @@ if (isset($_POST['update_cart'])) {
     exit;
 }
 
-// Fetch cart products
 $cart_products = [];
 $total_price = 0;
 if (!empty($_SESSION['cart'])) {
@@ -89,3 +86,4 @@ if (!empty($_SESSION['cart'])) {
     <?php endif; ?>
 </body>
 </html>
+
