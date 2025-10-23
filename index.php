@@ -2,10 +2,8 @@
 session_start();
 include 'includes/db_connect.php';
 
-// Calculate total cart items
 $cart_count = !empty($_SESSION['cart']) ? array_sum($_SESSION['cart']) : 0;
 
-// Fetch products
 $sql = "SELECT * FROM products";
 $result = mysqli_query($conn, $sql);
 ?>
@@ -34,3 +32,4 @@ $result = mysqli_query($conn, $sql);
     </div>
 </body>
 </html>
+
