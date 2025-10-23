@@ -6,33 +6,6 @@ A simple Grocery Delivery System built with PHP and MySQL for my class demo.
 Spencer Dant
 
 
-## Project Structure
-
-
-grocery_delivery_system/
-│
-├── index.php # Homepage showing available products
-├── product_detail.php # Displays detailed info for each product
-├── cart.php # Shows current shopping cart items
-├── add_to_cart.php # Handles adding products to cart
-├── clear_cart.php # Clears all cart items
-├── checkout.php # Simulates checkout process
-│
-├── includes/
-│ └── db_connect.php # Database connection script
-│
-├── assets/
-│ ├── style.css # Stylesheet
-│ └── images/ # Product images
-│
-├── database.sql # SQL file to create and populate database
-│
-└── documentation/
-├── brochure.pdf
-├── system_requirements_documentation.pdf
-└── presentation_slides.pdf
-
-
 ## Features
 
 - Browse grocery items (fruits, bread, milk, etc.)
